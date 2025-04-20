@@ -2,64 +2,56 @@
 <html lang="bg">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Моят уебсайт</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <nav>
     <ul>
       <li><a href="#home">Начало</a></li>
+      <li><a href="#about">За мен</a></li>
       <li><a href="#gallery">Галерия</a></li>
-      <li><a href="#news">Новини</a></li>
       <li><a href="#contact">Контакт</a></li>
-      <li><button id="theme-toggle">Смени тема</button></li>
+      <li><button id="toggle-theme">🌙</button></li>
     </ul>
   </nav>
 
   <section id="home">
-    <h1>Добре дошли в моя уебсайт</h1>
-    <p>Това е примерна страница, създадена с HTML, CSS и JavaScript.</p>
+    <h1>Добре дошли в моя уебсайт!</h1>
+    <p>Тук ще намерите снимки, информация за мен и начин да се свържете с мен.</p>
+  </section>
+
+  <section id="about">
+    <h2>За мен</h2>
+    <p>Казвам се Пламен. Обичам природата, пътуванията и създаването на уебсайтове. Това е моето онлайн пространство, където споделям снимки и мисли.</p>
   </section>
 
   <section id="gallery">
     <h2>Галерия</h2>
     <div class="gallery">
-      <img src="454648689_8453238944709828_612102656900920848_n.jpg
-" alt="Моята снимка" width="300" > 
+      <img src="454648689_8453238944709828_612102656900920848_n.jpg" alt="Снимка 1">
       <img src="image2.jpg" alt="Снимка 2">
       <img src="image3.jpg" alt="Снимка 3">
     </div>
   </section>
 
-  <section id="news">
-    <h2>Новини</h2>
-    <article>
-      <h3>Заглавие на новината</h3>
-      <p>Текст на новината...</p>
-    </article>
-  </section>
-
   <section id="contact">
-    <h2>Контакт</h2>
+    <h2>Контакт с мен</h2>
     <form id="contact-form">
-      <label for="name">Име:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Имейл:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Съобщение:</label>
-      <textarea id="message" name="message" required></textarea>
-
+      <input type="text" placeholder="Вашето име" required>
+      <input type="email" placeholder="Вашият имейл" required>
+      <textarea placeholder="Вашето съобщение" required></textarea>
       <button type="submit">Изпрати</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Моят уебсайт</p>
+    <p>&copy; 2025 Пламен. Всички права запазени.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
