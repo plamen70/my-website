@@ -1,9 +1,11 @@
-document.getElementById('theme-toggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
+document.getElementById('toggle-theme').addEventListener('click', function () {
+  document.body.classList.toggle('dark');
+  this.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
-  alert('Съобщението беше изпратено!');
+  alert("Благодарим! Съобщението беше изпратено.");
   this.reset();
 });
+
