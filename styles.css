@@ -4,6 +4,12 @@ body {
   padding: 0;
   background-color: #fff;
   color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
 }
 
 nav {
@@ -12,55 +18,97 @@ nav {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 nav ul li {
-  color: #fff;
+  margin: 0 10px;
 }
 
-nav ul li a, nav ul li button {
-  color: #fff;
+nav ul li a,
+nav ul li button {
+  color: white;
   text-decoration: none;
   background: none;
   border: none;
+  font-size: 16px;
   cursor: pointer;
+}
+
+h1, h2 {
+  text-align: center;
 }
 
 section {
   padding: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .gallery {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .gallery img {
-  width: 30%;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
 }
 
-/* Тъмен режим */
-body.dark-mode {
-  background-color: #121212;
-  color: #fff;
-}
+/* За телефони */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-body.dark-mode nav {
-  background-color: #000;
-}
-
-body.dark-mode footer {
-  background-color: #000;
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
