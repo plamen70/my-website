@@ -58,10 +58,18 @@ section {
 }
 
 .gallery img {
-  max-width: 300px;
+  max-width: 450px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 form {
   display: flex;
